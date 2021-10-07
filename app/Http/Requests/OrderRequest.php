@@ -24,9 +24,12 @@ class OrderRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|max:25|min:5',
-            'tel' => 'required|max:15|min:7',
-            'salary'=>'required',
+            'name' => 'required|max:25|min:5|unique:orders',
+            'tel' => 'required|max:15|unique:orders|regex:/^([0-9\s\-\+\(\)]*)$/|min:7',
+            'monthly'=>'required|numeric',
+            'car_id'=>'required',
+            'car_models_id'=>'required',
+            'year_id'=>'required',
 
         ];
     }

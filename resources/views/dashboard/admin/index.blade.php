@@ -6,10 +6,7 @@
             <div class="container-fluid py-1 px-3">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
-{{--                        <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>--}}
-{{--                        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Dashboard</li>--}}
                     </ol>
-{{--                    <h6 class="font-weight-bolder mb-0">Dashboard</h6>--}}
                 </nav>
                 <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
                             <ul class="navbar-nav  justify-content-end">
@@ -48,8 +45,8 @@
                                     <div class="numbers">
                                         <p class="text-sm mb-0 text-capitalize font-weight-bold">عدد الطلبات</p>
                                         <h5 class="font-weight-bolder mb-0">
-                                            $53,000
-                                            <span class="text-success text-sm font-weight-bolder">+55%</span>
+                                            {{$orders}}
+{{--                                            <span class="text-success text-sm font-weight-bolder">+55%</span>--}}
                                         </h5>
                                     </div>
                                 </div>
@@ -70,8 +67,8 @@
                                     <div class="numbers">
                                         <p class="text-sm mb-0 text-capitalize font-weight-bold">عدد طلبات اليوم</p>
                                         <h5 class="font-weight-bolder mb-0">
-                                            2,300
-                                            <span class="text-success text-sm font-weight-bolder">+3%</span>
+                                            {{$todayOrder}}
+{{--                                            <span class="text-success text-sm font-weight-bolder">+3%</span>--}}
                                         </h5>
                                     </div>
                                 </div>
@@ -92,8 +89,7 @@
                                     <div class="numbers">
                                         <p class="text-sm mb-0 text-capitalize font-weight-bold">عدد طلبات الشهر</p>
                                         <h5 class="font-weight-bolder mb-0">
-                                            +3,462
-                                            <span class="text-danger text-sm font-weight-bolder">-2%</span>
+                                            {{$monthOrder}}
                                         </h5>
                                     </div>
                                 </div>
@@ -114,14 +110,34 @@
                                     <div class="numbers">
                                         <p class="text-sm mb-0 text-capitalize font-weight-bold">الحالات الناجحه</p>
                                         <h5 class="font-weight-bolder mb-0">
-                                            $103,430
-                                            <span class="text-success text-sm font-weight-bolder">+5%</span>
+                                            {{$accepted}}
                                         </h5>
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
                                     <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
                                         <i class="ni ni-cart text-lg opacity-10" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                    <div class="card">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="numbers">
+                                        <p class="text-sm mb-0 text-capitalize font-weight-bold">عدد الطلبات المؤجله</p>
+                                        <h5 class="font-weight-bolder mb-0">
+                                            {{$waiting}}
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-end">
+                                    <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                        <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>

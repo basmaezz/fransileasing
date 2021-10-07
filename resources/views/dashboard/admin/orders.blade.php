@@ -25,9 +25,8 @@
                     <th>الأسم</th>
                     <th>رقم الجوال</th>
                     <th>المدينه</th>
-                    <th>الراتب الشهري</th>
-                    <th>عداد المركبه</th>
-                    <th width="100px">تفعيل/رفض</th>
+                    <th>السياره</th>
+{{--                    <th width="100px">تفعيل/رفض</th>--}}
                 </tr>
                 </thead>
                 <tbody>
@@ -37,10 +36,7 @@
     </main>
 
     <script type="text/javascript">
-
         $(function () {
-
-
             var table = $('.data-table').DataTable({
                 processing: true,
                 serverSide: true,
@@ -49,15 +45,15 @@
                     {data: 'id', name: 'id'},
                     {data: 'name', name: 'name'},
                     {data: 'tel', name: 'tel'},
-                    {data: 'tel', name: 'tel'},
-                    {data: 'tel', name: 'tel'},
-                    {data: 'tel', name: 'tel'},
-                    {data: 'action', name: 'action', orderable: false, searchable: false},
+                    {data: 'City', name: 'City.name'},
+                    {data: 'Car', name: 'Car.name'},
+                    // {data: 'action', name: 'action', orderable: false, searchable: false},
                 ]
             });
 
         });
 
     </script>
+{{--    {{$dataTable->scripts()}}--}}
 
 @endsection

@@ -20,7 +20,8 @@
                             <label class="form-label" for="name">الإسم </label>
                             <input class="form-control" id="name" type="text" placeholder="الإسم *"
                                    data-sb-validations="required"name="name"/>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">يرجى إدخال الإسم</div>
+                            @error('name')<span class="text-danger">{{ $message }}</span>@enderror
+
                         </div>
                     </div>
 
@@ -29,17 +30,21 @@
                             <label class="form-label" for="phone">رقم الجوال</label>
                             <input class="form-control" id="tel" type="tel" placeholder="رقم الجوال *"
                                    data-sb-validations="required" name="tel"/>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">يرجى إدخال رقم الجوال</div>
+{{--                            <div class="invalid-feedback" data-sb-feedback="phone:required">يرجى إدخال رقم الجوال</div>--}}
+                            @error('tel')<span class="text-danger">{{ $message }}</span>@enderror
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label class="form-label" for="city">المدينة</label>
                             <select class="form-select" id="city" aria-label="City" name="city_id">
+                                <option > المدينه</option>
                                 @foreach($cities as $city)
                                     <option value="{{$city->id}}">{{$city->name}}</option>
                                 @endforeach
                             </select>
+                            @error('city_id')<span class="text-danger">{{ $message }}</span>@enderror
+
                         </div>
                     </div>
 
@@ -62,6 +67,8 @@
                                        data-sb-validations="" value="1" />
                                 <label class="form-check-label" for="counter">عداد المركبة أقل من او يساوي 25 الف
                                     كم</label>
+                                @error('vehicle')<span class="text-danger">{{ $message }}</span>@enderror
+
                             </div>
                         </div>
                     </div>
@@ -72,9 +79,11 @@
                             <label class="form-label" for="monthlyExpenses"> الالتزامات الشهرية</label>
                             <input class="form-control" id="monthlyExpenses" type="text" placeholder="الالتزامات الشهرية"
                                    data-sb-validations="required" name="monthly"/>
-                            <div class="invalid-feedback" data-sb-feedback="monthlyExpenses:required">يرجى إدخال
-                                 الالتزامات الشهرية
-                            </div>
+                            @error('monthly')<span class="text-danger">{{ $message }}</span>@enderror
+
+                            {{--                            <div class="invalid-feedback" data-sb-feedback="monthlyExpenses:required">يرجى إدخال--}}
+{{--                                 الالتزامات الشهرية--}}
+{{--                            </div>--}}
                         </div>
                     </div>
 
@@ -87,6 +96,8 @@
                                     <option value="{{$year->id}}">{{$year->name}}</option>
                                 @endforeach
                             </select>
+                            @error('year_id')<span class="text-danger">{{ $message }}</span>@enderror
+
                         </div>
                     </div>
 
@@ -96,10 +107,13 @@
 
                             <label class="form-label" for="vehicle">نوع السيارة</label>
                             <select class="form-select vehicle-select " id="vehicle-select" aria-label="Vehicle" name="car_id">
+                                <option >نوع السياره</option>
                                 @foreach ( $cars as $car)
                                     <option value="{{$car->id}}">{{$car->name}}</option>
                                 @endforeach
                             </select>
+                            @error('car_id')<span class="text-danger">{{ $message }}</span>@enderror
+
                         </div>
                     </div>
 
@@ -107,8 +121,10 @@
                         <div class="form-group">
                             <label class="form-label" for="model">موديل السيارة</label>
                             <select class="form-select vehicle-model" id="vehicle-model" aria-label="Model" name="car_models_id">
-                                <option value="All cars"></option>
+                                <option value="All cars">موديل السيارة</option>
                             </select>
+                            @error('car_models_id')<span class="text-danger">{{ $message }}</span>@enderror
+
                         </div>
                     </div>
 
@@ -163,44 +179,33 @@
                     success: function (data) {
 
                         $('#vehicle-model').empty();
-                          console.log(data);
+                          // console.log(data);
                         $.each(data.carmodels, function (index, carmodel) {
                             $('#vehicle-model').append('<option value="' + carmodel.id + '">' + carmodel.name + '</option>');
                         })
-                        // $.each(data.carmodels[0].carmodels, function (index, carmodels) {
-                        //     $('#vehicle-model').append('<option value="' + carmodels.id + '">' + carmodels.name + '</option>');
-                        // })
                     }
                 })
             });
         });
 
-        // $(document).ready(function (){
-        //     $('.kchecked').on('change',function(e){
-        //     if ($('#agree').is(':checked') && $('#vechile').is(':checked') && $('#salary').is(':checked')) {
-        //                       $('#submitButton').removeClass("disabled");
-        //     } else{
-        //                       $('#submitButton').addClass("disabled");
-        //
-        //     }
-        //     });
-
-        var submit_btn = document.querySelector('#submitButton')
-        agree.onchange = function(e){
-            if (vehicle.checked && salary.checked && agree.checked){
-                submit_btn.classList.remove('disabled')
+        $(document).ready(function () {
+            var submit_btn = document.querySelector('#submitButton')
+            agree.onchange = function (e) {
+                if (vehicle.checked && salary.checked && agree.checked) {
+                    submit_btn.classList.remove('disabled')
+                }
             }
-        }
-        vehicle.onchange = function(e){
-            if (vehicle.checked && salary.checked && agree.checked){
-                submit_btn.classList.remove('disabled')
+            vehicle.onchange = function (e) {
+                if (vehicle.checked && salary.checked && agree.checked) {
+                    submit_btn.classList.remove('disabled')
+                }
             }
-        }
-        salary.onchange = function(e){
-            if (vehicle.checked && salary.checked && agree.checked){
-                submit_btn.classList.remove('disabled')
+            salary.onchange = function (e) {
+                if (vehicle.checked && salary.checked && agree.checked) {
+                    submit_btn.classList.remove('disabled')
+                }
             }
-        }
+        });
     </script>
     <style>label{float: right !important;}</style>
 @endsection

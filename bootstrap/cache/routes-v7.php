@@ -24,7 +24,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::VH0pmoUAGzZ2lgbG',
+            '_route' => 'generated::RodK1eRjZpCfExHR',
           ),
           1 => NULL,
           2 => 
@@ -44,7 +44,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::uO4WqaiBQ9bcu3QP',
+            '_route' => 'generated::m1kSDkAEJpilzHXl',
           ),
           1 => NULL,
           2 => 
@@ -64,7 +64,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ep8mTBm9ufdhfbvt',
+            '_route' => 'generated::1Ijh7wyh20zlZOW4',
           ),
           1 => NULL,
           2 => 
@@ -101,7 +101,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::jU62mFAjvoIpdNyR',
+            '_route' => 'generated::oFpLTrj27amM5tnv',
           ),
           1 => NULL,
           2 => 
@@ -156,7 +156,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Pv9V93sGESfjJaed',
+            '_route' => 'generated::Igz1w7DAhtAI5cvz',
           ),
           1 => NULL,
           2 => 
@@ -247,32 +247,12 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::9VO7Omnhj8mCGAhE',
+            '_route' => 'generated::c6S1Q4p4m1nr78Cr',
           ),
           1 => NULL,
           2 => 
           array (
             'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/conditions' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'conditions',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
           ),
           3 => NULL,
           4 => false,
@@ -286,7 +266,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ZiRaS8IIhZIX2Q3h',
+            '_route' => 'generated::v0hkYqHXfrCj6PBQ',
           ),
           1 => NULL,
           2 => 
@@ -405,7 +385,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::vGLdFFfcrQUBIy6o',
+            '_route' => 'generated::alAfr4dv4whLaCEg',
           ),
           1 => NULL,
           2 => 
@@ -432,6 +412,163 @@ app('router')->setCompiledRoutes(
           array (
             'GET' => 0,
             'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/settings' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'settings',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/conditions' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'conditions',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/store-conditions' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'store-conditions',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/view-conditions' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'view-conditions',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/edit-conditions' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'edit-conditions',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/create-conditions' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'create-conditions',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/update-conditions' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'update-conditions',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'PATCH' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/store-session' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'store-session',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
           ),
           3 => NULL,
           4 => false,
@@ -484,7 +621,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::VH0pmoUAGzZ2lgbG' => 
+    'generated::RodK1eRjZpCfExHR' => 
     array (
       'methods' => 
       array (
@@ -505,7 +642,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::VH0pmoUAGzZ2lgbG',
+        'as' => 'generated::RodK1eRjZpCfExHR',
       ),
       'fallback' => false,
       'defaults' => 
@@ -521,7 +658,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::uO4WqaiBQ9bcu3QP' => 
+    'generated::m1kSDkAEJpilzHXl' => 
     array (
       'methods' => 
       array (
@@ -538,13 +675,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:295:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:77:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000002b4d06960000000026de06d5";}";s:4:"hash";s:44:"3XelYL98uB8sdsQRcVu2dBTEf8UqdcIPbqU4pT4PBB8=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000069aa05780000000010de1d79";}";s:4:"hash";s:44:"ieJ1rE0GNNk9GBsZh1GL14L4Byk2TXduNdmNIkfjMOs=";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::uO4WqaiBQ9bcu3QP',
+        'as' => 'generated::m1kSDkAEJpilzHXl',
       ),
       'fallback' => false,
       'defaults' => 
@@ -560,7 +697,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::ep8mTBm9ufdhfbvt' => 
+    'generated::1Ijh7wyh20zlZOW4' => 
     array (
       'methods' => 
       array (
@@ -576,13 +713,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:269:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:51:"function () {
     return \\view(\'frontend.index\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000002b4d06900000000026de06d5";}";s:4:"hash";s:44:"22zOXx9ZY5NzFhSOlTn4GNZ/3URz2OiKjJgMIwaOkW0=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000069aa057a0000000010de1d79";}";s:4:"hash";s:44:"KvW2Vtj8uV/YljMLaBmB6F1Gy238tXgvNH2hEi71NWI=";}}',
         'namespace' => NULL,
         'prefix' => NULL,
         'where' => 
         array (
         ),
-        'as' => 'generated::ep8mTBm9ufdhfbvt',
+        'as' => 'generated::1Ijh7wyh20zlZOW4',
       ),
       'fallback' => false,
       'defaults' => 
@@ -635,7 +772,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::jU62mFAjvoIpdNyR' => 
+    'generated::oFpLTrj27amM5tnv' => 
     array (
       'methods' => 
       array (
@@ -655,7 +792,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::jU62mFAjvoIpdNyR',
+        'as' => 'generated::oFpLTrj27amM5tnv',
       ),
       'fallback' => false,
       'defaults' => 
@@ -744,7 +881,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Pv9V93sGESfjJaed' => 
+    'generated::Igz1w7DAhtAI5cvz' => 
     array (
       'methods' => 
       array (
@@ -764,7 +901,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Pv9V93sGESfjJaed',
+        'as' => 'generated::Igz1w7DAhtAI5cvz',
       ),
       'fallback' => false,
       'defaults' => 
@@ -963,7 +1100,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::9VO7Omnhj8mCGAhE' => 
+    'generated::c6S1Q4p4m1nr78Cr' => 
     array (
       'methods' => 
       array (
@@ -983,7 +1120,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::9VO7Omnhj8mCGAhE',
+        'as' => 'generated::c6S1Q4p4m1nr78Cr',
       ),
       'fallback' => false,
       'defaults' => 
@@ -999,52 +1136,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'conditions' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'conditions',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => '\\Illuminate\\Routing\\ViewController@__invoke',
-        'controller' => '\\Illuminate\\Routing\\ViewController',
-        'namespace' => NULL,
-        'prefix' => NULL,
-        'where' => 
-        array (
-        ),
-        'as' => 'conditions',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-        'view' => 'frontend.conditions',
-        'data' => 
-        array (
-        ),
-        'status' => 200,
-        'headers' => 
-        array (
-        ),
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'generated::ZiRaS8IIhZIX2Q3h' => 
+    'generated::v0hkYqHXfrCj6PBQ' => 
     array (
       'methods' => 
       array (
@@ -1065,7 +1157,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::ZiRaS8IIhZIX2Q3h',
+        'as' => 'generated::v0hkYqHXfrCj6PBQ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1273,7 +1365,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::vGLdFFfcrQUBIy6o' => 
+    'generated::alAfr4dv4whLaCEg' => 
     array (
       'methods' => 
       array (
@@ -1294,7 +1386,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::vGLdFFfcrQUBIy6o',
+        'as' => 'generated::alAfr4dv4whLaCEg',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1332,6 +1424,299 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'file-export',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'settings' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'settings',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\SettingController@index',
+        'controller' => 'App\\Http\\Controllers\\SettingController@index',
+        'namespace' => NULL,
+        'prefix' => NULL,
+        'where' => 
+        array (
+        ),
+        'as' => 'settings',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'conditions' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'conditions',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\ConditionController@index',
+        'controller' => 'App\\Http\\Controllers\\ConditionController@index',
+        'namespace' => NULL,
+        'prefix' => NULL,
+        'where' => 
+        array (
+        ),
+        'as' => 'conditions',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'store-conditions' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'store-conditions',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\ConditionController@store',
+        'controller' => 'App\\Http\\Controllers\\ConditionController@store',
+        'namespace' => NULL,
+        'prefix' => NULL,
+        'where' => 
+        array (
+        ),
+        'as' => 'store-conditions',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'view-conditions' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'view-conditions',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\ConditionController@getAll',
+        'controller' => 'App\\Http\\Controllers\\ConditionController@getAll',
+        'namespace' => NULL,
+        'prefix' => NULL,
+        'where' => 
+        array (
+        ),
+        'as' => 'view-conditions',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'edit-conditions' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'edit-conditions',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\ConditionController@view',
+        'controller' => 'App\\Http\\Controllers\\ConditionController@view',
+        'namespace' => NULL,
+        'prefix' => NULL,
+        'where' => 
+        array (
+        ),
+        'as' => 'edit-conditions',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'create-conditions' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'create-conditions',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\ConditionController@create',
+        'controller' => 'App\\Http\\Controllers\\ConditionController@create',
+        'namespace' => NULL,
+        'prefix' => NULL,
+        'where' => 
+        array (
+        ),
+        'as' => 'create-conditions',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'update-conditions' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PATCH',
+      ),
+      'uri' => 'update-conditions',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\ConditionController@update',
+        'controller' => 'App\\Http\\Controllers\\ConditionController@update',
+        'namespace' => NULL,
+        'prefix' => NULL,
+        'where' => 
+        array (
+        ),
+        'as' => 'update-conditions',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'store-session' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'store-session',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\SettingController@store',
+        'controller' => 'App\\Http\\Controllers\\SettingController@store',
+        'namespace' => NULL,
+        'prefix' => NULL,
+        'where' => 
+        array (
+        ),
+        'as' => 'store-session',
       ),
       'fallback' => false,
       'defaults' => 

@@ -6,7 +6,7 @@ use App\Exports\OrdersExport;
 use App\Http\Requests\OrderRequest;
 use App\Models\Age;
 use App\Models\Car;
-use App\Models\CarModels;
+use App\Models\CarModel;
 use App\Models\City;
 use App\Models\Order;
 use App\Models\User;
@@ -14,7 +14,7 @@ use App\Models\Year;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Excel;
 use Yajra\DataTables\Facades\DataTables;
-
+use Alert;
 class OrderController extends Controller
 {
     public function index()
@@ -22,44 +22,38 @@ class OrderController extends Controller
         $cars=Car::all();
         $cities=City::all();
         $years=Year::all();
-       return view('frontend.apply',compact(['cars','cities','years']));
+        return view('frontend.apply',compact(['cars','cities','years']));
     }
 
     public function getModel(Request $request)
     {
-       $carmodels = CarModels::where('car_id',$request->car_id) ->get();
+       $carmodels = CarModel::where('car_id',$request->car_id) ->get();
         return response()->json([
             'carmodels' => $carmodels
         ]);
     }
-    public function store(Request $request)
+    public function store(OrderRequest $request)
     {
-        dd($request->all());
-        $request->validate([
-            'name' => 'required',
-            'tel' => 'required',
-        ]);
         Order::create($request->all());
-
-        return redirect()->back()->with('success','تم تقديم الطلب بنجاح');
+        Alert::success('تم بنجاح', 'تم تسجيل الطلب بنجاح');
+        return redirect()->back();
     }
 
-    public function getAll(Request $request)
+    public function getAll(Request $request,DataTables $dataTable)
     {
 
         if ($request->ajax()) {
 
-            $data = Order::select('*');
+            $data = Order::with('Car','City')->get();
             return DataTables::of($data)
                 ->addIndexColumn()
-                ->addColumn('action', function($row){
-                    $btn = '<a href="javascript:void(0)" class="edit btn btn-primary btn-sm">Active</a>';
-                    return $btn;
-                })
-                ->rawColumns(['action'])
-                ->make(true);
+                ->addColumn('City', function (Order $order) {
+                    return $order->City->name;
+                }) ->addColumn('Car', function (Order $order) {
+                    return $order->Car->name;
+                }) ->toJson();
+           
         }
-
         return view('dashboard.admin.orders');
     }
 

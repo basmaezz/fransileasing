@@ -18,38 +18,37 @@
 
     <div class="page-section bottom-sec">
         <div class="container">
-                  <div class="text-center mt-5 mb-5">
+            <div class="text-center mt-5 mb-5">
                 <a class="btn btn-primary btn-lg text-uppercase" href="{{route('apply')}}"> قـــدم طلبك الأن</a>
 
             </div>
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">ما نقدمه لك</h2>
-                <h3 class="section-subheading">نقدم لك تسهيلات عديدة للحصول على سيارة</h3>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <div class="circle">
-                        <span class="">0%</span>
-                    </div>
-                    <h4 class="my-3">دفعة أولى</h4>
-                    <p class="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="circle">
-                        <span class="">0%</span>
-                    </div>
-                    <h4 class="my-3">هامش ربح</h4>
-                    <p class="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="circle">
-                        <span class="">0%</span>
-                    </div>
-                    <h4 class="my-3">رسوم إدارية</h4>
-                    <p class="">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه</p>
-                </div>
-            </div>
-      
+            <table class="darkTable mt-5">
+                <thead>
+                <tr>
+                    @foreach(\App\Models\Setting::all() as $setting)
+                    <th>{{$setting->name}}</th>
+                    @endforeach
+{{--                    <th>فترة التمويل</th>--}}
+{{--                    <th>هامش الربح</th>--}}
+{{--                    <th>التأمين</th>--}}
+{{--                    <th>الفسط الشهري</th>--}}
+{{--                    <th>معدل النسبة السنوي</th>--}}
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    @foreach(\App\Models\Setting::all() as $setting)
+                        <td>{{$setting->value}}</td>
+{{--                    <td>SAR100.000</td>--}}
+                    @endforeach
+{{--                    <td>4 سنوات</td>--}}
+{{--                    <td>4.99%</td>--}}
+{{--                    <td>1.5%</td>--}}
+{{--                    <td>2.599SAR</td>--}}
+{{--                    <td>12.77%</td>--}}
+                </tr>
+                </tbody>
+            </table>
 
         </div>
     </div>

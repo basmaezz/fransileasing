@@ -19,7 +19,6 @@ class CreateOrdersTable extends Migration
             $table->string('tel');
             $table->enum('salary',[0,1]);
             $table->enum('vehicle',[0,1]);
-            $table->foreignId('age_id')->references('id')->on('ages');
             $table->foreignId('city_id')->references('id')->on('cities');
             $table->foreignId('year_id')->references('id')->on('years');
             $table->foreignId('car_id')->references('id')->on('cars');

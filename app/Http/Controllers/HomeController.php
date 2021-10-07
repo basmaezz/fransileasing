@@ -23,6 +23,9 @@ class HomeController extends Controller
      */
     public function index()
     {
+
+//        $orders=Order::count();
+//        dd($orders);
         return view('dashboard.admin.index');
     }
 }

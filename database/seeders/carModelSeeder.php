@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\CarModels;
+use App\Models\CarModel;
 use Illuminate\Database\Seeder;
 
 class carModelSeeder extends Seeder
@@ -168,6 +168,6 @@ class carModelSeeder extends Seeder
             ['name'=>'Cayenne','car_id'=>'12'],
             ['name'=>'Macan','car_id'=>'12'],
         ];
-        CarModels::insert($carmodels);
+        CarModel::insert($carmodels);
     }
 }

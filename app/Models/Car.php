@@ -12,6 +12,11 @@ class Car extends Model
 
     public function carModels()
     {
-       return $this->hasMany(CarModels::class,'car_id');
+       return $this->hasMany(CarModel::class,'car_id');
     }
+    public function Order()
+    {
+        return $this->belongsTo(Order::class);
+    }
+
 }
